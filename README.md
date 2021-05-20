@@ -19,5 +19,8 @@ BOOM! Now you can access the Website
 
 ### Note 
 Make sure that you have already installed the MongoDB.
-If you haven't install yet then use this `https://www.mongodb.com/try/download/community` limk.
+If you haven't install yet then use this link.
+```md 
+https://www.mongodb.com/try/download/community
+```
 
