@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/create.css">
+    <title>Spark Foundation | Basic Banking System</title>
+</head>
+<body>
+
+    {{>navbar}}
+    
+    <div class="form">
+        <div class="upper">
+            <img src="/assets/profile.png" alt="user_picture" width="100" height="100">
+            <h2>Create User</h2>
+        </div>
+        <div class="bottom">
+            <form action="/Create_User" method="POST" autocomplete="off">
+                <div class="form-input name">
+                    <div class="names">
+                        <label for="fname">First Name:</label>
+                        <input id="fname" type="text" name="firstname">
+                    </div>
+                    <div class="names">
+                        <label for="lname">Last Name:</label>
+                        <input id="lname" type="text" name="lastname">
+                    </div>
+                </div>
+
+                <div class="form-input">
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email">
+                </div>
+
+                <div class="form-input form-gender">
+                        <label for="gender">Gender:</label>
+                        <div class="gender">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male" class="radio-options">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female" class="radio-options">Female</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other" class="radio-options">Other</label>
+                        </div>
+                </div>
+
+                <div class="form-input detail">
+                    <div class="details">
+                        <label for="dob">DOB:</label>
+                        <input id="dob" type="date" name="dob">
+                    </div>
+                    <div class="details">
+                        <label for="contact">Contact:</label>
+                        <input id="contact" type="text" name="contact">
+                    </div>
+                </div>
+
+                <div class="form-input">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="2" cols="40" style="vertical-align: top;" ></textarea>
+                </div>
+
+                <div class="form-input">
+                    <label for="accno">Account Number:</label>
+                    <input id="accno" type="text" name="accno">
+                </div>
+
+                <div class="form-input">
+                    <label for="balance">Balance:</label>
+                    <input id="balance" type="text" name="balance">
+                </div>
+
+                <div class="form-input">
+                    <label for="status">Status</label>
+                    <select name="status" id="status">
+                        <option value="choose">Choose</option>
+                        <option value="active">Active</option>
+                        <option value="blocked">blocked</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn" id="btn">Submit</button>
+                
+            </form>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

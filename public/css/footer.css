@@ -1,0 +1,19 @@
+footer {
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: #2b478b;
+    text-align: center;
+}
+    
+.copyright {
+    position: relative;
+    padding: 10px 0;
+}
+
+  p {
+    margin: 0;
+  }
+  
+  

@@ -1,0 +1,41 @@
+<head>
+    <link rel="stylesheet" href="/css/transfer.css">
+    <title>Spark Foundation | Basic Banking System</title>
+</head>
+
+{{>navbar}}
+
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>DOB</th>
+            <th>Contact</th>
+            <th>Account Number</th>
+            <th>Status</th>
+            <th>Transfer</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{this.firstname}}</td>
+            <td>{{this.lastname}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.gender}}</td>
+            <td>{{this.dob}}</td>
+            <td>{{this.contact}}</td>
+            <td>{{this.accno}}</td>
+            <td>{{this.status}}</td>
+            <td>
+                <form method="POST" action="/transferform"><button name="currentuser" value="{{this.firstname}}">Transact</button></form>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+{{>footer}}

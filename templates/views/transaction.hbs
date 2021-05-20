@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" href="/css/transaction.css">
+    <title>Spark Foundation | Basic Banking System</title>
+</head>
+
+{{>navbar}}
+
+<table>
+    <thead>
+        <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each transactions}}
+        <tr>
+            <td>{{this.from}}</td>
+            <td>{{this.to}}</td>
+            <td>{{this.amt}}</td>
+            <td>{{this.date}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+{{>footer}}

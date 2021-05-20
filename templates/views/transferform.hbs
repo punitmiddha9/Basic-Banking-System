@@ -1,0 +1,34 @@
+<head>
+    <link rel="stylesheet" href="/css/form.css">
+    <title>Spark Foundation | Basic Banking System</title>
+</head>
+
+{{>navbar}}
+
+<div class="login-box">
+  <h2>Login</h2>
+  <form action="/form" method="POST" autocomplete="off">
+    <div class="user-box">
+      <input type="text" name="from" required="true">
+      <label>From</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="to" required="true">
+      <label>To</label>
+    </div>
+    <div class="user-box">
+      <input type="number" name="amt" required="true">
+      <label>Amount</label>
+    </div>
+    {{!--  --}}
+    <button id="btn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <p>Transfer</p>
+    </button>
+  </form>
+</div>
+
+{{>footer}}
