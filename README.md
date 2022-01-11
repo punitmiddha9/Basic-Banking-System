@@ -8,12 +8,12 @@ Step 1: Clone or Download the Project.
 Step 2: Open your terminal/command prompt(preferable: vs code)
 
 Step 3: Change the directory using `cd` command.
-```md
+```bash
 cd Basic-Banking-System
 ```
 
 Step 4: Run the Following command.
-```md
+``bash
 npm run spark_foundation
 ```
 
