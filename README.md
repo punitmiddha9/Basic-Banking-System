@@ -13,7 +13,7 @@ cd Basic-Banking-System
 ```
 
 Step 4: Run the Following command.
-``bash
+```bash
 npm run spark_foundation
 ```
 
